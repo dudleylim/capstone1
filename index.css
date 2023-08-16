@@ -104,3 +104,48 @@ Extra large	    xl	≥1200px
 #tools-grid > img {
     margin: auto;
 }
+
+/* More animations */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0%;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+}
+
+#header-nav {
+    animation: 1.5s ease-out 0s 1 fadeIn;
+}
+
+
+.header-intro-left {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.header-intro-right {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
