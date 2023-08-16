@@ -1,13 +1,16 @@
 html, body {
     overflow-x: hidden;
+    padding: 0 !important;
 }
 
 * {
     font-family: Lato;
+    padding: 0;
+    margin: 0;
 }
 
 /* Header Styles */
-#header-nav, #header-intro {
+#header-nav, #header-intro, #main-landing, #main-tools {
     min-height: 50vh;
 }
 
@@ -16,13 +19,14 @@ html, body {
     background-repeat: no-repeat;
     /* background-size: cover; */
     background-attachment: fixed;
+    background-position: center;
 }
 
 @media screen and (min-width: 1px) {
     .header-link-item {
         width: 100%;
-        background-size: contain;
-        transition: width 1s;
+        background-size: cover;
+        transition: width 0.5s;
     }
 
     .header-link-item:hover {
@@ -34,7 +38,7 @@ html, body {
     .header-link-item {
         width: 100%;
         background-size: cover;
-        transition: width 1s;
+        transition: width 0.5s;
     }
 
     .header-link-item:hover {
@@ -64,3 +68,39 @@ Medium	        md	≥768px
 Large	        lg	≥992px
 Extra large	    xl	≥1200px
 */
+
+
+
+/* Body styles */
+.project-card {
+    min-height: 66vh;
+}
+
+.carousel-control-prev:hover {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.45), rgba(0,0,0,0)) ;
+}
+
+.carousel-control-next:hover {
+    background-image: linear-gradient(to left, rgba(0,0,0,0.45), rgba(0,0,0,0)) ;
+}
+
+#tools-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width: 768px)  {
+    #tools-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px)  {
+    #tools-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+#tools-grid > img {
+    margin: auto;
+}

@@ -20,39 +20,40 @@
         <!-- Nav bar -->
         <nav class="d-flex flex-column flex-lg-row p-0" id="header-nav">
             <div class="bg-primary flex-grow-1 header-link-item d-flex flex-column justify-content-center p-2" id="header-link-item-about">
-                <a class="text-decoration-none" href="#main-landing"><h1 class="text-light">About</h1></a>
+                <a class="text-decoration-none d-inline-block h-100 d-flex flex-column justify-content-center" href="#main-landing"><h1 class="text-light">About</h1></a>
             </div>
             
             <div class="bg-secondary flex-grow-1 header-link-item d-flex flex-column justify-content-center p-2" id="header-link-item-projects">
-                <a class="text-decoration-none" href="#main-projects"><h1 class="text-light">Projects</h1></a>
+                <a class="text-decoration-none d-inline-block h-100 d-flex flex-column justify-content-center" href="#main-projects"><h1 class="text-light">Projects</h1></a>
             </div>
             
             <div class="bg-primary flex-grow-1 header-link-item d-flex flex-column justify-content-center p-2" id="header-link-item-tools">
-                <a class="text-decoration-none" href="#main-tools"><h1 class="text-light">Tools</h1></a>
+                <a class="text-decoration-none d-inline-block h-100 d-flex flex-column justify-content-center" href="#main-tools"><h1 class="text-light">Tools</h1></a>
             </div>
             
             <div class="bg-warning flex-grow-1 header-link-item d-flex flex-column justify-content-center p-2" id="header-link-item-contact">
-                <a class="text-decoration-none" href="#main-contact"><h1 class="text-light">Contact</h1></a>
+                <a class="text-decoration-none d-inline-block h-100 d-flex flex-column justify-content-center" href="#main-contact"><h1 class="text-light">Contact</h1></a>
             </div>
         </nav>
 
         <!-- Intro -->
-        <section class="bg-dark text-light container-fluid p-0 pt-5" id="header-intro">
+        <section class="bg-dark text-light container-fluid pt-4 pb-3" id="header-intro">
             <div class="row gap-5">
-                <div class="col-12 col-lg-6 text-center my-auto">
-                    <img class="rounded-circle" src="./images/header/header-id.jpg" width="300" alt="me">
+                <div class="col-12 col-lg-6 text-center my-auto d-flex flex-column align-items-center gap-5">
+                    <img class="rounded-circle" src="./images/header/header-id.jpg" width="250" alt="me">
+                    <h5>Hi! I am Dudley Adrian Lim</h5>
                 </div>
 
                 <div class="col-12 col-lg-5 d-flex flex-row flex-lg-column justify-content-center gap-5">
-                    <h1>Web Development</h1>
-                    <h1>Machine Learning</h1>
-                    <h1 class="d-none d-lg-block">Full-Stack</h1>
-                    <h1 class="d-none d-lg-block">Applications</h1>
+                    <h1 class="text-end text-lg-start">Web Development</h1>
+                    <h1 class="text-start">Machine Learning</h1>
+                    <h1 class="text-end text-lg-start d-none d-lg-block">Full-Stack</h1>
+                    <h1 class="text-warning text-start d-none d-lg-block">Developer</h1>
                 </div>
 
                 <div class="d-block d-lg-none col-12 col-lg-6 d-flex flex-row justify-content-center gap-5">
                     <h1>Full-Stack</h1>
-                    <h1>Applications</h1>
+                    <h1 class="text-warning">Developer</h1>
                 </div>
             </div>
         </section>
@@ -60,29 +61,257 @@
 
     <main>
         <!-- Landing -->
-        <section class="bg-primary" id="main-landing">
-            
+        <section class="bg-primary justify-content-center align-items-center row text-light py-5 gap-5" id="main-landing">
+            <h2 class="text-center text-decoration-underline col-9">
+                I am...
+            </h2>
+
+            <h3 class="text-center col-9 d-none d-md-block">
+                An Ateneo de Manila University graduate with a background in information systems and project management.
+            </h3>
+
+            <h3 class="text-center col-9 d-none d-md-block">
+                Knowledgeable in software and web application development and familiar in development techniques and design conventions.
+            </h3>
+
+            <h3 class="text-center col-9 d-none d-md-block">
+                A fast and willing learner, and is able to work individually or in a team.
+            </h3>
+
+            <h3 class="text-center col-9 d-block d-md-none">
+                Passionate for good design.
+            </h3>
+
+            <h3 class="text-center col-9 d-block d-md-none">
+                Always aiming for the best results.
+            </h3>
+
+            <h3 class="text-center col-9 d-block d-md-none">
+                A team player, and a quick learner.
+            </h3>
         </section>
 
         <!-- Projects -->
-        <section id="main-projects">
+        <section class="min-vh-100 text-light py-5" id="main-projects">
+            <h1 class="ps-5">Projects</h1>
+
+            <!-- Project 1: Spomodoro -->
+            <div class="project-card row py-4">
+                <!-- Details -->
+                <div class="p-5 col-12 col-lg-6 d-flex flex-column justify-content-center gap-3 align-items-center">
+                    <a class="text-light" href="https://dudley-spomodoro.netlify.app/"><h2>Spomodoro</h2></a>
+                    <p class="w-100 text-center">
+                        Pomodoro timer web application which can connect to Spotify using Spotify’s Web API and Web Playback SDK.
+                    </p>
+                    <p class="w-100 text-center">
+                        Includes basic UI to control timer and music player, utilizing ReactJS and Tailwind.
+                    </p>
+                </div>
+
+                <!-- Carousel -->
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center gap-3 align-items-center p-0 p-lg-5">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active p-0">
+                                <img src="./images/projects/project-spomodoro.PNG" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item p-0">
+                                <img src="./images/projects/project-spomodoro2.PNG" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
             
+            <!-- Project 2: Notes App -->
+            <div class="project-card row py-4">
+                <!-- Carousel -->
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center gap-3 align-items-center p-0 p-lg-5 order-3 order-lg-1">
+                    <div id="carousel-2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active p-0">
+                                <img src="./images/projects/project-todo.png" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item p-0">
+                                <img src="./images/projects/project-todo2.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Details -->
+                <div class="p-5 col-12 col-lg-6 d-flex flex-column justify-content-center gap-3 align-items-center order-lg-2">
+                    <a class="text-light" href="https://mern-notes-app-qi1n.onrender.com"><h2>To-do Notes App</h2></a>
+                    <p class="w-100 text-center">
+                        Notes app where you can signup, login, and record your own notes.
+                    </p>
+                    <p class="w-100 text-center">
+                        Stores data in MongoDB Atlas, so you can see your notes from any device.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Project 3: Mock E-commerce Site -->
+            <div class="project-card row py-4">
+                <!-- Details -->
+                <div class="p-5 col-12 col-lg-6 d-flex flex-column justify-content-center gap-3 align-items-center">
+                    <a class="text-light" href="https://github.com/dudleylim/mern-ecommerce-frontend"><h2>Mock E-commerce Site</h2></a>
+                    <p class="w-100 text-center">
+                        Prototype design of an e-commerce site.
+                    </p>
+                    <p class="w-100 text-center">
+                        Uses best practices to create a secure shopping experience; utilizing JWT for session handling and bcrypt package for encryption of personal data.
+                    </p>
+                </div>
+
+                <!-- Carousel -->
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center gap-3 align-items-center p-0 p-lg-5">
+                    <div id="carousel-3" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active p-0">
+                                <img src="./images/projects/project-ecommerce.PNG" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item p-0">
+                                <img src="./images/projects/project-ecommerce2.PNG" class="d-block w-100" alt="...">
+                            </div>
+
+                            <div class="carousel-item p-0">
+                                <img src="./images/projects/project-ecommerce3.PNG" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <hr />
+
         <!-- Tools -->
-        <section id="main-tools">
-            
+        <section class="bg-black text-light py-5" id="main-tools">
+            <h1 class="ps-5 text-center">Tools</h1>
+
+            <!-- <marquee class="w-75" behavior="scroll" direction="left" scrollamount="15"> -->
+            <!-- <div class="d-flex flex-row flex-md-column justify-content-center align-items-center">
+                <div class="d-flex flex-column flex-md-row gap-3 align-items-center">
+                    <img width="100" src="./images/tools/css.png" alt="">
+                    <img width="100" src="./images/tools/html.png" alt="">
+                    <img width="100" src="./images/tools/js.png" alt="">
+                    <img width="100" src="./images/tools/bootstrap.png" alt="">
+                </div>
+                
+                <div class="d-flex flex-column flex-md-row gap-3  align-items-center">
+                    <img width="100" src="./images/tools/tailwind.png" alt="">
+                    <img width="100" src="./images/tools/react.png" alt="">
+                    <img width="100" src="./images/tools/django.png" alt="">
+                    <img width="100" src="./images/tools/spring-boot.png" alt="">
+                </div>
+
+                <div class="d-flex flex-column flex-md-row gap-3  align-items-center">
+                    <img width="100" src="./images/tools/php.png" alt="">
+                    <img width="100" src="./images/tools/node.png" alt="">
+                    <img width="100" src="./images/tools/postgres.png" alt="">
+                    <img width="100" src="./images/tools/mongo.png" alt="">
+                </div>
+            </div> -->
+
+            <div class="text-center" id="tools-grid">
+                    <img width="100" src="./images/tools/css.png" alt="">
+                    <img width="100" src="./images/tools/html.png" alt="">
+                    <img width="100" src="./images/tools/js.png" alt="">
+                    <img width="100" src="./images/tools/bootstrap.png" alt="">
+                
+                    <img width="100" src="./images/tools/tailwind.png" alt="">
+                    <img width="100" src="./images/tools/react.png" alt="">
+                    <img width="100" src="./images/tools/django.png" alt="">
+                    <img width="100" src="./images/tools/spring-boot.png" alt="">
+
+                    <img width="100" src="./images/tools/php.png" alt="">
+                    <img width="100" src="./images/tools/node.png" alt="">
+                    <img width="100" src="./images/tools/postgres.png" alt="">
+                    <img width="100" src="./images/tools/mongo.png" alt="">
+            </div>
+            <!-- </marquee> -->
         </section>
 
         <!-- Contact -->
-        <section id="main-contact">
+        <section class="bg-primary text-light py-5 min-vh-100 d-flex flex-column justify-content-center gap-2 gap-lg-5" id="main-contact">
+            <h1 class="ps-5 text-center">Contact Me</h1>
+            <div class="row">
+                <!-- SocMed links -->
+                <div class="col-12 col-lg-4 order-2 d-flex flex-row justify-content-evenly align-items-center">
+                    <a href="https://github.com/dudleylim"><img src="./images/contact/github.png" alt=""></a>
+                    <a href="https://linkedin.com/in/dudley-adrian-lim"><img src="./images/contact/linkedin.png" alt=""></a>
+                    <a href="mailto:dudleylim@gmail.com"><img src="./images/contact/gmail.png" alt=""></a>
+                </div>
+
+                <!-- Contact form -->
+                <form class="col-12 col-lg-8 order-1 order-lg-3 p-5 d-flex flex-column gap-4">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="John Jane Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="some@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact">Contact number</label>
+                        <input type="text" class="form-control" id="contact" aria-describedby="emailHelp" placeholder="+63 000 000 0000" required>
+                    </div>
+
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+                </form>
+            </div>
             
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body text-center text-black">
+                            Thank you for contacting me. Hope to talk to you soon!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-
-    </footer>
 
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
