@@ -1,0 +1,9 @@
+Header
+1. Nav animations
+2. Intro header
+
+Main
+3. Landing/About Me
+4. Projects
+5. Tools
+6. Contact
